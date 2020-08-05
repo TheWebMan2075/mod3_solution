@@ -1,6 +1,6 @@
 body{
   font-size: 16px;
-  color: #fff;
+  color: #fff; /*white*/
   background-color: #61122f; /*maroon*/
   font-family: 'Oxygen', sans-serif;
 }
@@ -45,15 +45,20 @@ body{
 #nav-list: nth-child(3){
   border-bottom: 0;
 }
+
+
 #nav-list li{
-  background: #fff;
+  background: #000; /*background of dropdown list is black*/
   border-bottom: 2px solid;
+
 }
+
 #nav-list li: nth-child(3){
   border-bottom:0;
 }
+/*the actual names in the drop down list chicken, beef, sushi*/
 #nav-list li a{
-  color: #000;
+  color: #fff; /*white*/
   font-weight: 600;
   line-height: 8px
 }
@@ -73,22 +78,25 @@ body{
 /*affects the background colour of each menu item, ie chicken*/
 .menu-item{
   margin-bottom: 20px;
-  background:  #f6b319;  
+  background:  #f6b319;  /*yellowish*/
   padding: 10px;
 }
-.menu-item h3 {
+.menu-item h4 {
   font-weight: bold;
+  color: blue;
 }
+
 .menu-item p{
   font-weight: 600;
   font-size: .9em;
-  padding: 5px 10px;
+  padding: 10px 10px;
+  color: blue;
 }
 
-
-@media (max-width:767px){
-  .navbar-brand:focus, .navbar-brand{
-    margin-left:10px;
+/*affects the layout of the food items in mobile view*/
+@media (max-width: 767px) {
+  .navbar-brand: focus, .navbar-brand{
+    margin-left: 20px;
   }
   .menu{
     width: 80%;
@@ -97,8 +105,8 @@ body{
     margin-bottom: 15px;
   }
   .menu-item p{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1em;
-    padding:5px 15px;
+    padding: 10px 10px;
   }
 }
